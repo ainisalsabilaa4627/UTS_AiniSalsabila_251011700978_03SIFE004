@@ -1,0 +1,774 @@
+body {
+    background-color: #f5f8f6;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand {
+    color: #168568 !important;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.footer {
+    background-color: #168568;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.kartu-olahraga {
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kartu-olahraga:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.10) !important;
+}
+
+.kartu-olahraga .card-img-top {
+    transition: transform 0.4s ease;
+}
+
+.kartu-olahraga:hover .card-img-top {
+    transform: scale(1.04);
+}
+
+.card-title {
+    color: #183b32;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #168568;
+}
+
+#daftar-olahraga {
+    width: 100%;
+    scroll-margin-top: -10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.kartu-olahraga {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.kartu-olahraga:hover {
+    transform: translateY(-5px);
+}
+
+/* WARNA DAN DASAR */
+:root {
+    --hijau: #168568;
+    --hijau-tua: #104b3d;
+    --hijau-muda: #e5f5ee;
+    --teks: #20352f;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    color: var(--teks);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    min-height: 76px;
+    padding: 12px 0;
+}
+
+.navbar-brand img {
+    max-height: 48px;
+    width: auto;
+}
+
+.navbar .nav-link {
+    color: #46564f;
+    padding: 10px 16px !important;
+    font-size: 14px;
+}
+
+.navbar .nav-link:hover {
+    color: var(--hijau);
+}
+
+/* Navbar link */
+.navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--hijau);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--hijau);
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+/* HERO */
+.hero-sportiva {
+    padding: 40px 0 65px;
+    background: linear-gradient(135deg, #f0faf5, #ffffff 70%);
+    overflow: hidden;
+}
+
+.label-hero,
+.label-section {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 30px;
+    background: var(--hijau-muda);
+    color: var(--hijau);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.judul-hero {
+    color: var(--hijau-tua);
+    font-size: clamp(32px, 4.2vw, 53px);
+    line-height: 1.25;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+}
+
+.judul-hero span {
+    color: var(--hijau);
+}
+
+.deskripsi-hero {
+    color: #64736c;
+    font-size: 15px;
+    line-height: 1.9;
+    max-width: 570px;
+}
+
+.btn-sportiva {
+    background: var(--hijau);
+    color: white;
+    border: 1px solid var(--hijau);
+    padding: 13px 22px;
+    border-radius: 9px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.btn-sportiva:hover {
+    background: var(--hijau-tua);
+    color: white;
+}
+
+.btn-outline-sportiva {
+    border: 2px solid #cbdcd4;
+    color: var(--hijau-tua);
+    padding: 13px 22px;
+    border-radius: 9px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.btn-outline-sportiva:hover {
+    background: var(--hijau-muda);
+    color: var(--hijau-tua);
+}
+
+.statistik-sportiva h3 {
+    color: var(--hijau);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.statistik-sportiva p {
+    color: #758179;
+    font-size: 11px;
+    margin-bottom: 0;
+}
+
+/* GAMBAR HERO */
+.hero-visual {
+    position: relative;
+    padding: 10px;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 20px 55px rgba(16, 75, 61, 0.13);
+}
+
+.gambar-hero {
+    display: block;
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.hero-caption {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    right: 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 13px;
+}
+
+.caption-icon {
+    font-size: 28px;
+}
+
+.hero-caption h6 {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.hero-caption p {
+    font-size: 11px;
+    color: #718078;
+    margin-bottom: 0;
+}
+
+/* DAFTAR OLAHRAGA */
+.section-olahraga {
+    background: #f8faf9;
+}
+
+.judul-section {
+    color: var(--hijau-tua);
+    font-size: clamp(24px, 3vw, 34px);
+    font-weight: 700;
+}
+
+.section-olahraga .text-center > p {
+    font-size: 13px;
+}
+
+/* SEARCH */
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 11px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 8px 15px 8px 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.search-box:focus-within {
+    border-color: #168568;
+    box-shadow: 0 0 0 3px rgba(22, 133, 104, 0.12);
+}
+
+.search-box span {
+    font-size: 14px;
+}
+
+.search-box .form-control {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background: transparent;
+    min-width: 0;
+}
+
+.btn-search {
+    background: #168568;
+    color: white;
+    border: 1px solid #168568;
+    border-radius: 25px;
+    font-size: 13px;
+    padding: 7px 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn-search:hover {
+    background: white;
+    color: #168568;
+}
+
+/* KARTU */
+.kartu-olahraga {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(28, 69, 53, 0.05);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.kartu-olahraga:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(28, 69, 53, 0.12);
+}
+
+.gambar-kartu {
+    height: 250px;
+    overflow: hidden;
+    background: var(--hijau-muda);
+}
+
+.kartu-olahraga .card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.kartu-olahraga:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.badge-kategori {
+    padding: 7px 10px;
+    border-radius: 6px;
+    background: var(--hijau-muda);
+    color: var(--hijau);
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.kartu-olahraga .card-title {
+    color: var(--hijau-tua);
+    font-size: 16px;
+}
+
+.kartu-olahraga .card-body p {
+    font-size: 11px;
+}
+
+.btn-detail {
+    padding: 10px;
+    background: white;
+    color: var(--hijau);
+    border: 1px solid #cce5d9;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.btn-detail:hover {
+    background: var(--hijau);
+    color: white;
+}
+
+.pagination {
+    gap: 6px;
+}
+
+.pagination .page-link {
+    color: var(--hijau);
+    border: 1px solid #cce5d9;
+    border-radius: 8px;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--hijau);
+    border-color: var(--hijau);
+    color: white;
+}
+
+.pagination .page-link:hover {
+    background-color: var(--hijau);
+    border-color: var(--hijau);
+    color: white;
+}
+
+/* TENTANG SPORTIVA */
+.tentang-sportiva {
+    background: white;
+}
+
+.deskripsi-tentang {
+    max-width: 750px;
+    color: #68766f;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* Profil Sportiva */
+.profil-sportiva {
+    padding: 45px 0 75px;
+    background: #fff;
+}
+
+.profil-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profil-heading h1 {
+    font-size: clamp(30px, 4vw, 42px);
+    font-weight: 800;
+    color: #26372b;
+    margin: 10px 0;
+}
+
+.profil-heading h1 span {
+    color: var(--hijau);
+}
+
+.profil-heading > p {
+    color: #777;
+    font-size: 15px;
+}
+
+.profil-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.profil-photo {
+    position: relative;
+    padding: 0 45px 45px 0;
+}
+
+.profil-photo .foto-utama {
+    display: block;
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.foto-kecil {
+    position: absolute;
+    width: 46%;
+    height: 175px;
+    right: 0;
+    bottom: 0;
+    padding: 8px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.foto-kecil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.profil-number {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 8px 12px;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+}
+
+.profil-number strong {
+    color: #198754;
+    font-size: 16px;
+}
+
+.profil-number span {
+    color: #777;
+    font-size: 10px;
+}
+
+.profil-text {
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+.profil-subtitle {
+    color: var(--hijau);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.profil-text h2 {
+    color: #26372b;
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 800;
+    margin: 14px 0 20px;
+}
+
+.profil-text p {
+    color: #6f7771;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+
+.profil-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background: white;
+    color: var(--hijau);
+    border: 2px solid #cce5d9;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.profil-link:hover {
+    background: var(--hijau);
+    color: white;
+    border-color: var(--hijau);
+}
+
+.profil-link span {
+    margin-left: 8px;
+}
+
+
+.tentang-hero {
+    background: #f5f8f2;
+    padding: 65px 0;
+}
+
+.tentang-hero h1 {
+    color: #26372b;
+    font-size: clamp(30px, 4vw, 45px);
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.tentang-hero h1 span {
+    color: #198754;
+}
+
+.tentang-deskripsi {
+    color: #667168;
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 28px;
+}
+
+
+.btn-olahraga-lain {
+    background-color: #168568;
+    color: white;
+    border: 1px solid #168568;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-olahraga-lain:hover {
+    background-color: white;
+    color: #168568;
+    border-color: #168568;
+    transform: translateY(-2px);
+}
+
+.btn-tentang {
+    display: inline-block;
+    background: #198754;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-tentang:hover {
+    background: #146c43;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-tentang span {
+    margin-left: 8px;
+}
+
+.tentang-gambar {
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.tentang-gambar img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.gambar-caption {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    background: white;
+    padding: 17px 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.gambar-caption strong {
+    color: #198754;
+    font-size: 15px;
+}
+
+.gambar-caption p {
+    color: #777;
+    font-size: 12px;
+    margin: 5px 0 0;
+}
+
+.tentang-info {
+    padding: 75px 0;
+    background: white;
+}
+
+.judul-info {
+    color: #26372b;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    margin-top: 10px;
+}
+
+.info-pembuka {
+    color: #777;
+    font-size: 15px;
+}
+
+.info-card {
+    height: 100%;
+    background: #fff;
+    border: 1px solid #e8eee8;
+    border-radius: 15px;
+    padding: 30px 24px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+    transition: 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-7px);
+    border-color: #198754;
+    box-shadow: 0 12px 28px rgba(25, 135, 84, 0.12);
+}
+
+.info-icon {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.info-card h3 {
+    color: #26372b;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.info-card p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.container.py-5 > .card {
+    max-width: 1100px;
+    margin: 0 auto;
+    border-radius: 40px !important;
+    overflow: hidden;
+}
+
+.container.py-5 > .card .col-md-5 {
+    flex: 0 0 55%;
+    max-width: 55%;
+    padding: 0;
+}
+
+.container.py-5 > .card .col-md-7 {
+    flex: 0 0 45%;
+    max-width: 45%;
+}
+
+.container.py-5 > .card img {
+    width: 100%;
+    height: 100%;
+    min-height: 100% !important;
+    object-fit: cover;
+}
+
+.container.py-5 > .card .card-body {
+    padding: 24px !important;
+}
+
+.container.py-5 > .card h1 {
+    font-size: 30px;
+}
+
+.container.py-5 > .card h5 {
+    font-size: 17px;
+}
+
+.container.py-5 > .card p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* FOOTER */
+.footer {
+    background: var(--hijau-tua);
+    color: white;
+    padding: 25px 15px;
+    text-align: center;
+    margin-top: 0;
+    font-size: 12px;
+}
