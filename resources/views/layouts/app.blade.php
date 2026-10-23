@@ -45,6 +45,7 @@
 
     <footer class="footer">
         <p class="mb-0">&copy; {{ date('Y') }} Sportiva. Kenali Olahragamu, Mulai Aksi Hebatmu!</p>
+        <p>Project UTS Aini Salsabila - 251011700978</p>
     </footer>
 
     <script src="{{ asset('Bootstrap/js/bootstrap.bundle.min.js') }}"></script>

@@ -767,8 +767,13 @@ body {
 .footer {
     background: var(--hijau-tua);
     color: white;
-    padding: 25px 15px;
+    padding: 15px 12px;
     text-align: center;
     margin-top: 0;
-    font-size: 12px;
+    font-size: 11px;
+    line-height: 1.7;
+}
+ 
+.footer p { 
+    margin: 0;
 }
